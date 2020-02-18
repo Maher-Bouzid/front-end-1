@@ -149,7 +149,9 @@
                         {{ review.user }}
                         <small>
                           &#xB7; {{ review.creationDate | moment("from", "now", true) }}
-                          <span v-if="!review.creationDate">a few seconds</span>ago
+                          <span
+                            v-if="!review.creationDate"
+                          >a few seconds</span>ago
                         </small>
                       </h4>
                       <h6 class="text-muted"></h6>
